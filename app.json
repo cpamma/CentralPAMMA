@@ -1,0 +1,57 @@
+{
+  "expo": {
+    "name": "CPAMMA",
+    "slug": "cpamma",
+    "version": "0.24.0",
+    "orientation": "portrait",
+    "scheme": "cpamma",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "userInterfaceStyle": "light",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "androidStatusBar": {
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.cpamma.memberapp",
+      "entitlements": {
+        "com.apple.developer.networking.wifi-info": true
+      }
+    },
+    "android": {
+      "package": "com.cpamma.memberapp",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "4a01b64d-dd3c-4f27-9419-f25aa8e2382b"
+      }
+    },
+    "owner": "centralpamma",
+    "plugins": [
+      "expo-asset",
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow CPAMMA to use your location to confirm arrival for classes.",
+          "locationAlwaysAndWhenInUsePermission": "Allow CPAMMA to use your location to confirm arrival for classes.",
+          "isAndroidBackgroundLocationEnabled": true,
+          "isIosBackgroundLocationEnabled": true
+        }
+      ]
+    ]
+  }
+}
